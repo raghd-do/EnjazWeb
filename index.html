@@ -1,0 +1,549 @@
+<!doctype html>
+
+<html lang="ar"
+dir="rtl"> 
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <title>enjaz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <style>
+      /*-----page1-----*/
+.banner-image{
+    background-position: 20px;
+    background-image: url('img/bgHeader.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: gray;
+   background-blend-mode: multiply;
+    height: 950px;
+  }
+
+  .text{
+    color: aliceblue;
+    padding-top: 25%;
+  }
+
+  .pText{
+    color: aliceblue;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+  }
+
+  .navbar-nav{
+    padding-right: 10%;
+  }
+
+  .navbar-scrolled{
+    background-color: #a88262bb;
+  }
+
+  .btn{
+    background-color: #a8826244;
+    
+  }
+
+  /*-----page2-----*/
+  .title::before{
+    content: '';
+    background: #A88162;
+    height: 2px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+
+  }
+  #page2{
+    padding: 80px 0;
+    background: #f8f9fa;
+  }
+  .page2-img{
+    width: 100px;
+    margin-top: 20px;
+  } 
+  .page2{
+    padding: 20px;
+  }
+  .page2 h4{
+    padding: 15px;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
+  
+  /*-----page3-----*/
+  #page3{
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+  }
+  .title2{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    color: #A88162;
+  }
+  #page3 ul li{
+    margin: 10px 0;
+    margin-right: 50px;
+  }
+  
+  /*-----page4-----*/
+
+  #page4{
+    padding: 80px 0;
+    background: #f8f9fa;
+  }
+  .counter-wrapper{
+    background: url(img/bgHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10rem 9%;
+    margin-top: 5rem;
+    position: relative;
+  }
+  .counter-wrapper::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0,7);
+    z-index: 1;
+  }
+
+  .counter{
+    text-align: center;
+    color: #ddd;
+    z-index: 2;
+    position: relative;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    padding-top: 1cm;
+  }
+
+
+  .counter .count{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #A88162;
+  }
+
+  .counter p{
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  @media(max-width: 991px) {
+    html{
+      font-size: 55%;
+    }
+  }
+  @media (max-width:768px) {
+    .counter-wrapper{
+      grid-template-columns: repeat(2, 1fr);
+      grid-row-gap: 8rem;
+    }
+  }
+
+  @media (max-width:450px) {
+    html{
+      font-size: 50%;
+    }
+    .counter-wrapper{
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /*-----page5-----*/
+
+  #page5{
+    padding: 80px 0;
+  }
+  
+
+  /*-----page6-----*/
+#page6{
+    padding: 80px 0;
+    background: #f8f9fa;
+  }
+
+  /*-----page7-----*/
+  #page7{
+    padding: 80px 0;
+  }
+
+.imgPage7{
+padding-left: 5%;
+padding-right: 5%;
+}
+
+.h2Page7{
+  margin-top: 7%;
+  color: #A88162;
+}
+
+
+
+
+ 
+
+  /*-----page8-----*/
+  
+
+  #page8{
+    padding: 80px 0;
+    background: #f8f9fa;
+  }
+
+  .contactFirst{
+    padding-top: 5%;
+    padding-right: 5%;
+    padding-left: 2%;
+  margin-top: 2%;
+  }
+  
+  .contact{
+    padding-right: 5%;
+    padding-left: 2%;
+margin-top: 2%;
+  }
+
+  .contactbtn{
+    padding-top: 5%;
+  }
+
+   /*-----page9-----*/
+
+
+
+  #page9{
+    padding: 80px 0;
+    background: #A88162;
+  }
+
+
+
+    </style>
+  </head>
+
+
+  <body>
+<!-- بدايه navbar-->
+    <div class="navbar fixed-top navbar-expand-md navbar-dark navbar-scrolled p-md-3" >
+      <div class="container">
+        <!--logo-->
+        <a href="#" class="navbar-brand">
+          <img src="img/2-removebg-preview.png" width="50" height="50" alt="">
+        </a>
+<!-- تقلر -->
+        <button 
+        class="navbar-toggler"
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#mainmenu"
+        aria-expanded="false"
+        aria-label="toggle navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+<!-- قائمه navbar-->
+        <div class="collapse navbar-collapse" id="mainmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a href="#page1" class="nav-link">الرئيسيه</a></li>
+            <li class="nav-item"><a href="#page2" class="nav-link"> من نحن؟</a></li>
+            <li class="nav-item"><a href="#page3" class="nav-link">مميزاتنا </a></li>
+            <li class="nav-item"><a href="#page4" class="nav-link"> ارقامنا</a></li>
+            <li class="nav-item"><a href="#page5" class="nav-link">كيف يعمل؟</a></li>
+            <li class="nav-item"><a href="#page6" class="nav-link">جديدنا</a></li>
+            <li class="nav-item"><a href="#page7" class="nav-link">التطبيق</a></li>
+            <li class="nav-item"><a href="#page8" class="nav-link">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+<!-- نهايه navbar-->
+
+<!-- section (1) beginning-->
+<section id="page1"> 
+  <div class="banner-image  align-items-center">
+    <div class="content text-center">
+  
+      <h1 class="text text-center display-1">نظام انجاز الالكتروني</h1>
+      <p class="pText h5"> نظام إلكتروني لإدارة حلقات تحفيظ القرآن الكريم
+         يربط بين أطراف العملية التعليمية ويحفز لإنتاجية أفضل</p>
+      <button type="button" class="btn btn-secondary btn-lg">أنضم ألينا</button>
+  
+    </div>
+    </div>
+</section>
+
+  
+<!-- section (1) ending -->
+
+
+
+<!-- section (2) beginning-->
+
+<section id="page2">
+
+ <div class="container text-center">
+  <h1 class="title">من نحن؟</h1>
+  <div class="row text-center">
+    <div class="col-md-4 page2">
+      <img src="img/Tezhib-removebg-preview.png" class="page2-img">
+      <h4>المهمة</h4>
+      <p>تقديم خدمات إلكترونية مميزة لتسهيل و تنظيم و إدارة عملية تعليم القرآن الكريم</p>
+    </div>
+
+    <div class="col-md-4 page2">
+      <img src="img/Tezhib-removebg-preview.png" class="page2-img">
+      <h4>الرؤية</h4>
+      <p>  الريادة في خدمات التعليم القرآني الإلكتروني على مستوى المملكة</p>
+    </div>
+
+    <div class="col-md-4 page2">
+      <img src="img/Tezhib-removebg-preview.png" class="page2-img">
+      <h4>القيم</h4>
+      <p>الإبداع - الإتقان - العمل الجماعي - الإحسان </p>
+    </div>
+
+  </div>
+ </div>
+
+
+</section>
+
+<!-- section (2) ending-->
+
+
+
+<!-- section (3) beginning-->
+
+<section id="page3">
+  <div class="container">
+    <h1  class="title text-center">مميزاتنا</h1>
+    <div class="row">
+
+      <div class="col-md-6 page3">
+        <p class="title2">لماذا تختار نظام انجاز؟</p>
+        <ul>
+         <li> <span class="fw-bold"> التوافقية </span>حيث أن النظام صمم بما يتوافق مع طبيعة العمل داخل الجمعية بالإضافة إلى مراعاته للمناهج المعتمدة</li>
+         <li> <span class="fw-bold"> السهولة </span> حيث أن النظام يهدف أثناء تحليله و تصميمه على تسهيل عمل المستخدمين له</li>
+         <li> <span class="fw-bold"> المرونة </span> أسس النظام على أسلوب ديناميكي بحيث يسهل تخصيصه مستقبلًا دون تدخل برمجي</li>
+         <li> <span class="fw-bold"> التكاملية </span> صمم النظام بشكل يقبل التكامل مع الأنظمة الأخرى و يسهل الربط مع أي نظام للإستفادة من المميزات الموجودة فيه </li>
+         
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <img src="img/page3 img2.png" class="img-fluid page3Img">
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+<!-- section (3) ending-->
+
+
+
+<!-- section (4) beginning-->
+
+<section id="page4">
+  <div class="container">
+    <h1  class="title text-center">أرقامنا</h1>
+    <div class="counter-wrapper">
+
+      <div class="counter">
+        <h1 class="count" data-target="1185">0</h1>
+        <p class="page4P">طالب من الجمعيات</p>
+      </div>
+      <div class="counter">
+        <h1 class="count" data-target="4430">0</h1>
+        <p class="page4P">طالبه من الدور</p>
+      </div>
+      <div class="counter">
+        <h1 class="count" data-target="500">0</h1>
+        <p class="page4P">من المعلمين والمعلمات</p>
+      </div>
+      <div class="counter">
+        <h1 class="count" data-target="522">0</h1>
+        <p class="page4P">حلقه في المجمعات والدور</p>
+      </div>
+      <div class="counter">
+        <h1 class="count" data-target="5013">0</h1>
+        <p class="page4P">منتسبي النظام</p>
+      </div>
+
+    </div>
+
+  </div>
+  
+</section>
+<!-- section (4) ending-->
+
+
+
+<!-- section (5) beginning-->
+
+<section id="page5">
+  <div class="container"></div>
+  <h1  class="title text-center">كيف يعمل؟</h1>
+
+</section>
+
+<!-- section (5) ending-->
+
+
+
+<!-- section (6) beginning-->
+
+<section id="page6">
+  <div class="container"></div>
+  <h1  class="title text-center">جديدنا </h1>
+
+</section>
+
+<!-- section (6) ending-->
+
+
+
+<!-- section (7) beginning-->
+
+<section id="page7">
+  <div class="container"></div>
+  <h1  class="title text-center">التطبيق </h1>
+
+
+    <h2 class="h2Page7 text-center"> حمل التطبيق الان!</h2>
+    <p class="text-center mt-3 mb-4">تشرف بتحميلكم التطبيقات الإلكترونية وبدء تجربة مميزة في تحفيظ القرآن الكريم</p>
+
+      <div class="download mt-4 text-center mb-5">
+        <a href="default.asp"><img src="img/aivalable.png" alt="HTML tutorial" style="width:250px;height:90px;"></a>
+        <a href="default.asp"><img src="img/get.png" alt="HTML tutorial" style="width:250px;height:85px;"></a>
+
+
+
+      </div>
+               
+
+  
+<div class="imgPage7 row">
+  
+  <div class="col-md classes mx-auto">
+    <img src="img//pic1.png" style="width:100%" >
+  </div>
+  <div class="col-md classes mx-auto">
+    <img src="img/pic2.png" style="width:100%" >
+  </div>
+  <div class="col-md classes mx-auto">
+    <img src="img/pic3.png" style="width:100%" >
+  </div>
+  <div class="col-md classes mx-auto">
+    <img src="img/pic4.png" style="width:100%" >
+  </div>
+  
+</div>
+
+
+
+</section>
+
+<!-- section (7) ending-->
+
+<!-- section (8) beginning-->
+<section id="page8">
+  <div class="container"></div>
+  <h1  class="title text-center">تواصل معنا  </h1>
+
+  <form>
+
+      <div class="contactFirst form-group col-md-6">
+        <label for="inputname">الاسم</label>
+        <input type="Name" class="form-control" id="inputname" placeholder="محمد عبدالله">
+      </div>
+
+      <div class="contact form-group col-md-6">
+        <label for="inputemail">الأيميل</label>
+        <input type="Email" class="form-control" id="inputemail" placeholder="user@gmail.com">
+      </div>
+    
+
+    <div class="contact form-group">
+      <label for="inputAddress">الرساله</label>
+      <input type="Text" class="form-control" id="inputAddress" placeholder="رسالتك">
+    </div>
+    
+    <div class="contactbtn text-center"> 
+      <button type="button" class="btn btn-secondary btn-lg">أرسال</button>
+    </div>
+    
+  </form>
+
+
+</section>
+
+<!-- section (8) ending-->
+
+
+<!-- section (9) beginning-->
+<section id="page9">
+ 
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+
+      <ul class="nav col-md-3 justify-content-end">
+        <li class="nav-item"><a href="#page1" class="nav-link px-2 text-muted">الرئيسيه</a></li>
+        <li class="nav-item"><a href="#page2" class="nav-link px-2 text-muted">من نحن؟</a></li>
+        <li class="nav-item"><a href="#page3" class="nav-link px-2 text-muted">مميزاتنا</a></li>
+        <li class="nav-item"><a href="#page4" class="nav-link px-2 text-muted">ارقامنا</a></li>
+        <li class="nav-item"><a href="#page5" class="nav-link px-2 text-muted">كيف يعمل؟</a></li>
+        <li class="nav-item"><a href="#page6" class="nav-link px-2 text-muted">جديدنا</a></li>
+        <li class="nav-item"><a href="#page7" class="nav-link px-2 text-muted">التطبيق</a></li>
+        <li class="nav-item"><a href="#page8" class="nav-link px-2 text-muted">تواصل</a></li>
+      </ul>
+
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0  link-dark text-decoration-none">
+        <img src="img/2-removebg-preview.png" width="50" height="50" alt="">
+      </a>
+
+      <p class="col-md-4 mb-0 text-end">&copy; 2022 جميع الحقوق محفوظه لجمعية مدكر في عنيزة</p>
+  
+      
+  
+      
+    </footer>
+  </div>
+
+</section>
+
+
+
+<!-- section (9) ending-->
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
